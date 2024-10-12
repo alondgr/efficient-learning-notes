@@ -35,6 +35,7 @@ nav a {
 a {
   transition: all 750ms;
   color: #270091;
+  animation: normal;
 }
 
 a:hover {
@@ -66,6 +67,7 @@ a:hover {
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin: 25px 50px;
+  font-size: larger;
 }
 
 p {
@@ -152,6 +154,7 @@ em {
 }
 
 p {
+  /* padding-top: 50px; */
   width: 100%;
 }
 
@@ -172,17 +175,24 @@ p {
   align-items: flex-start;
   justify-content: flex-start;
   backdrop-filter: blur(10px);
+  transition: all 750ms;
 }
 
 .sidebar-nav {
   width: 100%;
+  transition: all 750ms;
+  animation-delay: 250ms;
 }
 .sidebar-nav a {
   width: 100%;
+  animation-delay: 250ms;
 }
 
 .ham-menu {
   display: none;
+  animation-delay: 250ms;
+  transition: all 750ms;
+  animation: none;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -209,6 +219,7 @@ p {
 
   .ham-menu {
     display: block;
+    animation-delay: 250ms;
   }
 
   .main-nav {
@@ -216,6 +227,7 @@ p {
     list-style: none;
     font-size: 1.1em;
     margin: 0;
+    animation-delay: 250ms;
   }
 
   /* .sidebar {
@@ -233,6 +245,8 @@ p {
 
 .ham-menu {
   margin-left: auto;
+  transition: 750ms;
+  animation-delay: 250ms;
 }
 
 .ham-menu-close:hover {
